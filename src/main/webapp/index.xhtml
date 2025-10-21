@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+<h:head>
+  <title>Início</title>
+</h:head>
+<h:body>
+  <h1>JSF - Navegação &amp; Outcomes</h1>
+
+  <!-- Implícita: outcome "cadastro" vai para /cadastro.xhtml -->
+  <h:form>
+    <h:commandButton value="Ir para Cadastro (implícita)" action="cadastro"/>
+  </h:form>
+
+  <!-- Programática via método: -->
+  <h:form>
+    <h:commandButton value="Ir para Cadastro (método)" action="#{navBean.irParaCadastro}"/>
+  </h:form>
+
+  <!-- Outro destino implícito -->
+  <h:form>
+    <h:commandButton value="Ir para Sobre (implícita)" action="sobre"/>
+  </h:form>
+
+</h:body>
+</html>
